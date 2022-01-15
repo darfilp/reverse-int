@@ -1,4 +1,7 @@
-module.exports = function reverse (n) {
+function toReadable(n) {
+  n = Math.abs(n)
   n = n.toString().split('').reverse()
-  return +n.join('')
-}
+  console.log(+n.join(''))
+}; 
+
+toReadable(-198)
